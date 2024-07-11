@@ -1,1 +1,2 @@
-// JavaScript source code
+const dayjs = require('dayjs');
+dayjs.format();
