@@ -3,12 +3,12 @@
 },{}],2:[function(require,module,exports){
 const dayjs = require('dayjs');
 
-var updateTime = () => {
+/* Get and update time every second */
+var interval = setInterval(() => {
     const time = document.getElementById('time');
     const date = document.getElementById('date');
     const timezone = document.getElementById('timezone');
 
-    time.innerText = dayjs.format('hh:mm:ss');
-    setTimeout(updateTime(), 1000);
-}
+    time.innerText = dayjs().format('HH:mm:ss');
+}, 1000);
 },{"dayjs":1}]},{},[2]);
